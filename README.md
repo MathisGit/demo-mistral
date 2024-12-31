@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+🌟 Chat Application with Mistral AI
+This is a chat application built with Next.js and Mistral AI's public API. It demonstrates the integration of generative AI into a modern web application with a clean and intuitive interface.
 
-## Getting Started
+✨ Features
+🗨️ Real-time Chat using Mistral AI's models.
+🖼️ Elegant Design with Material-UI (MUI).
+🔧 Built with Next.js for seamless server-side rendering.
+📜 Modular Code Structure for ease of understanding and extension.
 
-First, run the development server:
+📋 Requirements
+Node.js: Version 16.0.0 or higher.
+A .env.local file containing your API key.
 
-```bash
+🚀 Getting Started
+
+1️⃣ Clone the Repository
+git clone https://github.com/MathisGit/demo-mistral.git
+cd demo-mistral
+
+2️⃣ Install Dependencies
+
+npm install
+
+3️⃣ Configure Environment Variables
+
+Create a .env.local file in the root of the project with the following content:
+
+MISTRAL_API_KEY=your_api_key_here
+
+4️⃣ Run the Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to http://localhost:3000 to see the application.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+🛠️ Deployment
+To deploy the application for production, follow these steps:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Build the project:
+npm run build
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Start the server:
+npm start
+The application will now be accessible on the specified host and port.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📂 Project Structure
+src/
+├── components/          # Reusable React components
+├── fonts/               # Custom fonts
+├── pages/               # Next.js pages (API routes included)
+├── styles/              # CSS modules for styling
 
-## Learn More
+📝 Additional Notes
+If you encounter any issues, ensure that your Node.js version matches the requirements.
+For detailed API usage, refer to the Mistral AI Documentation.
+📧 Contact
+Feel free to reach out if you have any questions or feedback:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Email: mathis.grosmaitre@etu.minesparis.psl.eu
+GitHub: @MathisGit
