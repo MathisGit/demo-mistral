@@ -1,0 +1,20 @@
+.userMessage {
+    text-align: right;
+    background-color: #d4f1f4;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    max-width: 60%;
+  }
+  
+  .botMessage {
+    text-align: left;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 60%;
+    color: black;
+  }
+  
