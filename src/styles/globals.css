@@ -9,6 +9,12 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: 'RobotoFlex'; /* Nom que vous donnez à la police */
+  src: url('/src/fonts/RobotoFlex.ttf') format('truetype'); /* Chemin et format */
+  font-weight: normal; /* Poids par défaut */
+  font-style: normal; /* Style par défaut */
+}
 
 html,
 body {
@@ -17,12 +23,19 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: 'RobotoFlex', sans-serif;
+  font-weight: 500;
+  background-color: #f9f9f9; /* Fond clair */
+  color: #333; /* Texte sombre */
 }
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
 
 * {
   box-sizing: border-box;
@@ -40,3 +53,46 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Style général de la barre de défilement */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #bdbdbd #f1f1f1; /* Couleur du pouce et de la piste */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px; /* Largeur de la barre */
+  height: 12px; /* Hauteur pour les barres horizontales */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3b3d3f; /* Couleur du pouce */
+  border-radius: 4px; /* Coins arrondis */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de la piste */
+  border-radius: 4px; /* Coins arrondis */
+}
+
+input {
+  font-family: 'RobotoFlex', Arial, sans-serif; /* Police personnalisée */
+  letter-spacing: 1%; /* Écart entre les lettres */
+  font-size: 18px; /* Taille de la police */
+  font-weight: 500; /* Poids de la police */
+  padding: 10px; /* Espacement intérieur */
+  border: none; /* Bordure */
+  border-radius: 4px; /* Coins arrondis */
+  width: 100%; /* Largeur ajustable */
+}
+
+input:focus {
+  outline: none; /* Retire la bordure bleue par défaut */
+}
+
+span {
+  font-family: 'RobotoFlex', Arial, sans-serif; /* Police personnalisée */
+  font-size: 18px; /* Taille de la police */
+  font-weight: 500; /* Poids de la police */
+}
+
